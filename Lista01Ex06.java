@@ -6,30 +6,38 @@ public class Lista01Ex06 {
 		Random rnd = new Random();
 		int sortead = rnd.nextInt(100);
 		int num;
+		int contador = 0;
 		System.out.println("Informe um número: ");
 		num = in.nextInt();
 		if(num == sortead) {
 			System.out.println("Acertou!");
+			contador++;
 			return;
 		}
 		if(num > sortead) {
 			System.out.println("O número sorteado é MENOR!");
+			contador++;
 		}
 		if(num < sortead) {
 			System.out.println("O número sorteado é MAIOR!");
+			contador++;
 		}
 		while( num != sortead) {
 			System.out.println("Informe um número: ");
 			num = in.nextInt();
 			if(num == sortead) {
 				System.out.println("Acertou!");
+				contador++;
+				System.out.println("Tentativas até o acerto: "+ contador + ".");
 				break;
 			}
 			if(num > sortead) {
 				System.out.println("O número sorteado é MENOR!");
+				contador++;
 			}
 			if(num < sortead) {
 				System.out.println("O número sorteado é MAIOR!");
+				contador++;
 			}
 			
 		}
