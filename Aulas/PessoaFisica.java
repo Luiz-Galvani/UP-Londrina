@@ -25,6 +25,7 @@ public class PessoaFisica extends Pessoa{
 		return super.toString() + "Cpf=" + cpf + "\n";
 	}
 	
+
 	public double calcularImposto() {
 		double renda = getRendaBruta();
 		if(renda <= 1400) {
