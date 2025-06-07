@@ -1,4 +1,4 @@
-package UPLondrina.ClassesAbstratas;
+package ClassesAbstratas;
 
 public abstract class Funcionario{
     protected String nome;

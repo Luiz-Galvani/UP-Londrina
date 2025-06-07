@@ -1,3 +1,4 @@
+package ClassesAbstratas;
 public class MainEmpresa {
     public static void main(String[] args) {
         Empresa emp = new Empresa();

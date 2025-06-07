@@ -1,3 +1,4 @@
+package ClassesAbstratas;
 public class Presidente extends Funcionario{
     private String divisao;
     

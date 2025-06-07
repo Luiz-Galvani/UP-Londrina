@@ -1,5 +1,4 @@
-package UPLondrina.Interface;
-
+package Interface;
 public class Diretor extends Gerente {
 
     public double bonificacao(double salario){

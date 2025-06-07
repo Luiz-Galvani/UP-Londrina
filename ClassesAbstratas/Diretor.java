@@ -1,3 +1,5 @@
+package ClassesAbstratas;
+
 public class Diretor extends Gerente {
 
     public double bonificacao(double salario){

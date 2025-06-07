@@ -1,4 +1,4 @@
-package UPLondrina.Interface;
+package Interface;
 
 public abstract class Funcionario{
     protected String nome;

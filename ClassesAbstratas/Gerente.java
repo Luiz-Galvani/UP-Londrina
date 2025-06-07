@@ -1,3 +1,4 @@
+package ClassesAbstratas;
 public class Gerente extends Funcionario {
     private String setor;
     

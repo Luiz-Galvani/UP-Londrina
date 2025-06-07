@@ -1,3 +1,4 @@
+package ClassesAbstratas;
 public class Retangulo extends Forma {
     private double lado1;
     private double lado2;

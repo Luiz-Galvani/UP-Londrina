@@ -1,4 +1,4 @@
-package UPLondrina.Interface;
+package Interface;
 
 public class TesteLogin {
     public static void main(String [] args){
