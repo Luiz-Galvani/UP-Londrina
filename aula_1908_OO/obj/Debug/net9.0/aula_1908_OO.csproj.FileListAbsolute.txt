@@ -1,0 +1,15 @@
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\bin\Debug\net9.0\aula_1908_OO.exe
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\bin\Debug\net9.0\aula_1908_OO.deps.json
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\bin\Debug\net9.0\aula_1908_OO.runtimeconfig.json
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\bin\Debug\net9.0\aula_1908_OO.dll
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\bin\Debug\net9.0\aula_1908_OO.pdb
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\obj\Debug\net9.0\aula_1908_OO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\obj\Debug\net9.0\aula_1908_OO.AssemblyInfoInputs.cache
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\obj\Debug\net9.0\aula_1908_OO.AssemblyInfo.cs
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\obj\Debug\net9.0\aula_1908_OO.csproj.CoreCompileInputs.cache
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\obj\Debug\net9.0\aula_1908_OO.sourcelink.json
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\obj\Debug\net9.0\aula_1908_OO.dll
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\obj\Debug\net9.0\refint\aula_1908_OO.dll
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\obj\Debug\net9.0\aula_1908_OO.pdb
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\obj\Debug\net9.0\aula_1908_OO.genruntimeconfig.cache
+C:\Workspace\LANG\UPLondrina\aula_1908_OO\obj\Debug\net9.0\ref\aula_1908_OO.dll
