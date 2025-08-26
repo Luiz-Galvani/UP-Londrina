@@ -9,7 +9,7 @@ public class Locacao {
         itensLocados = new ArrayList<Item>();
     }
     public Locacao(ArrayList<Item> itensLocados){
-        this.itensLocados = new ArrayList<>();
+        this.itensLocados = itensLocados;
     }
     public void adicionarItem(Item item){
         itensLocados.add(item);
