@@ -1,0 +1,173 @@
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic; 
+using System;
+using System.Linq; // <--- ADICIONE ESTE 'using' para usar .FirstOrDefault()
+
+namespace AtividadeAPI.Controllers
+{
+    // --- MODELOS ---
+    // Modelo do Usuário (o que salvamos no "banco")
+    public class Usuario
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+    }
+
+    // DTO (Input) para receber dados no POST e PUT
+    public class UsuarioInput
+    {
+        public string Nome { get; set; }
+    }
+
+    [ApiController]
+    [Route("Users")]
+    public class UsuarioController : ControllerBase
+    {
+        // --- "BANCO DE DADOS" EM MEMÓRIA ---
+        // Precisamos desta lista para PUT e DELETE funcionarem
+        private static List<Usuario> _database = new List<Usuario>();
+        private static int _nextId = 1; // Contador para gerar IDs
+
+        // --- SEU CÓDIGO ORIGINAL (Gerador de Nomes Aleatórios) ---
+        private static readonly Random _random = new Random();
+        private static readonly List<string> _possibleNames = new List<string>
+            {
+                "Ana", "Bruno", "Carla", "Daniel", "Eduarda", "Felipe", "Gabriela",
+                "Heitor", "Isabela", "João", "Karen", "Lucas", "Maria", "Nathan",
+                "Olívia", "Pedro", "Rafaela", "Samuel", "Tatiana", "Victor"
+            };
+
+        // --- SEUS MÉTODOS ORIGINAIS (Movidos para rotas específicas) ---
+
+        /// <summary>
+        /// Seu GET original, agora na rota "Users/Random"
+        /// </summary>
+        [HttpGet("Random")] // ROTA: GET /Users/Random
+        public IActionResult GetRandomNames()
+        {
+            var nomesRand = new List<string>();
+            for (int i = 0; i < 10; i++)
+            {
+                var j = _random.Next(_possibleNames.Count);
+                nomesRand.Add(_possibleNames[j]);
+            }
+            return Ok(nomesRand);
+        }
+
+        /// <summary>
+        /// Seu POST original, agora na rota "Users/CountLetters"
+        /// </summary>
+        [HttpPost("CountLetters")] // ROTA: POST /Users/CountLetters
+        public IActionResult postCountLetters([FromBody] string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return BadRequest("O campo é obrigatório");
+            }
+            string name = input.Replace(" ","");
+            int tamanho = name.Length;
+
+            return Ok($"Olá {input} seu nome tem {tamanho} caracteres.");
+        }
+
+        // -----------------------------------------------------------------
+        // --- NOVOS MÉTODOS CRUD (CREATE, READ, UPDATE, DELETE) ---
+        // -----------------------------------------------------------------
+
+        /// <summary>
+        /// CREATE: Cria um novo usuário e salva na lista
+        /// </summary>
+        [HttpPost] // ROTA: POST /Users
+        public IActionResult CreateUser([FromBody] UsuarioInput input)
+        {
+            if (input == null || string.IsNullOrEmpty(input.Nome))
+            {
+                return BadRequest("O campo 'nome' é obrigatório.");
+            }
+
+            var novoUsuario = new Usuario
+            {
+                Id = _nextId++,
+                Nome = input.Nome
+            };
+            
+            _database.Add(novoUsuario);
+            
+            // Retorna 201 Created com o novo usuário
+            return CreatedAtAction(nameof(GetUserById), new { id = novoUsuario.Id }, novoUsuario);
+        }
+
+        /// <summary>
+        /// READ (All): Retorna todos os usuários da lista
+        /// </summary>
+        [HttpGet] // ROTA: GET /Users
+        public IActionResult GetAllUsers()
+        {
+            return Ok(_database);
+        }
+
+        /// <summary>
+        /// READ (One): Retorna um usuário específico pelo ID
+        /// </summary>
+        [HttpGet("{id}")] // ROTA: GET /Users/1
+        public IActionResult GetUserById(int id)
+        {
+            var usuario = _database.FirstOrDefault(u => u.Id == id);
+            if (usuario == null)
+            {
+                return NotFound($"Usuário com ID {id} não encontrado.");
+            }
+            return Ok(usuario);
+        }
+
+
+        // --- AQUI ESTÁ O PUT (UPDATE) ---
+        
+        /// <summary>
+        /// UPDATE: Atualiza o nome de um usuário existente
+        /// </summary>
+        [HttpPut("{id}")] // ROTA: PUT /Users/1
+        public IActionResult UpdateUser(int id, [FromBody] UsuarioInput input)
+        {
+            // 1. Encontra o usuário no "banco"
+            var usuario = _database.FirstOrDefault(u => u.Id == id);
+            if (usuario == null)
+            {
+                return NotFound($"Usuário com ID {id} não encontrado.");
+            }
+
+            // 2. Valida o novo nome
+            if (input == null || string.IsNullOrEmpty(input.Nome))
+            {
+                return BadRequest("O campo 'nome' é obrigatório.");
+            }
+
+            // 3. Atualiza o nome e retorna o usuário atualizado
+            usuario.Nome = input.Nome;
+            return Ok(usuario);
+        }
+
+        
+        // --- AQUI ESTÁ O DELETE ---
+
+        /// <summary>
+        /// DELETE: Remove um usuário da lista
+        /// </summary>
+        [HttpDelete("{id}")] // ROTA: DELETE /Users/1
+        public IActionResult DeleteUser(int id)
+        {
+            // 1. Encontra o usuário no "banco"
+            var usuario = _database.FirstOrDefault(u => u.Id == id);
+            if (usuario == null)
+            {
+                return NotFound($"Usuário com ID {id} não encontrado.");
+            }
+
+            // 2. Remove o usuário da lista
+            _database.Remove(usuario);
+
+            // 3. Retorna sucesso (204 No Content)
+            return NoContent();
+        }
+    }
+}
