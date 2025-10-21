@@ -1,0 +1,15 @@
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\bin\Debug\net9.0\EX2.exe
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\bin\Debug\net9.0\EX2.deps.json
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\bin\Debug\net9.0\EX2.runtimeconfig.json
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\bin\Debug\net9.0\EX2.dll
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\bin\Debug\net9.0\EX2.pdb
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\obj\Debug\net9.0\EX2.GeneratedMSBuildEditorConfig.editorconfig
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\obj\Debug\net9.0\EX2.AssemblyInfoInputs.cache
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\obj\Debug\net9.0\EX2.AssemblyInfo.cs
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\obj\Debug\net9.0\EX2.csproj.CoreCompileInputs.cache
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\obj\Debug\net9.0\EX2.sourcelink.json
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\obj\Debug\net9.0\EX2.dll
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\obj\Debug\net9.0\refint\EX2.dll
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\obj\Debug\net9.0\EX2.pdb
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\obj\Debug\net9.0\EX2.genruntimeconfig.cache
+D:\FACUL\POSITIVO\UP-Londrina\ListaDeExerciciosC#\EX2\obj\Debug\net9.0\ref\EX2.dll

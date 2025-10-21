@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FACUL\\POSITIVO\\UP-Londrina\\ListaDeExerciciosC#\\EX4\\EX4.csproj": {}
+    "C:\\Users\\Luiz Galvani\\UP-Londrina\\ListaDeExerciciosC#\\EX4\\EX4.csproj": {}
   },
   "projects": {
-    "D:\\FACUL\\POSITIVO\\UP-Londrina\\ListaDeExerciciosC#\\EX4\\EX4.csproj": {
+    "C:\\Users\\Luiz Galvani\\UP-Londrina\\ListaDeExerciciosC#\\EX4\\EX4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FACUL\\POSITIVO\\UP-Londrina\\ListaDeExerciciosC#\\EX4\\EX4.csproj",
+        "projectUniqueName": "C:\\Users\\Luiz Galvani\\UP-Londrina\\ListaDeExerciciosC#\\EX4\\EX4.csproj",
         "projectName": "EX4",
-        "projectPath": "D:\\FACUL\\POSITIVO\\UP-Londrina\\ListaDeExerciciosC#\\EX4\\EX4.csproj",
-        "packagesPath": "C:\\Users\\littl\\.nuget\\packages\\",
-        "outputPath": "D:\\FACUL\\POSITIVO\\UP-Londrina\\ListaDeExerciciosC#\\EX4\\obj\\",
+        "projectPath": "C:\\Users\\Luiz Galvani\\UP-Londrina\\ListaDeExerciciosC#\\EX4\\EX4.csproj",
+        "packagesPath": "C:\\Users\\Luiz Galvani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luiz Galvani\\UP-Londrina\\ListaDeExerciciosC#\\EX4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\littl\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Luiz Galvani\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
