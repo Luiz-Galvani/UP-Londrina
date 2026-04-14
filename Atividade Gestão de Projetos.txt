@@ -1,0 +1,16 @@
+Qual é o problema?
+Demora no giro de leito em hospitais
+Giro de leito é todo processo que faz parte da gestão dos leitos em hospitais(alocação, limpeza, manutenção ...)
+Quem é o público-alvo?
+Como stakeholders, o principal seria o Hospital, seguido de pacientes e funcionários.
+Por que esse projeto é necessário?
+ O projeto é necessário para melhorar a eficácia no giro de leito. Com um projeto de software voltado para essa gestão, além de mitigar o tempo desperdiçado nesses processos, o software trará KPIs e análises extremamente importantes para a gerência do Hospital, e por fim, trará melhoras no atendimento e procedimentos dos pacientes.
+Quais incertezas vocês identificam?
+O software pode ser de difícil escalonamento, pois cada Hospital tem sistemas e processos próprios.
+Sistema dependerá da execução dos funcionários, por exemplo: Caso um dos funcionários demore para atender o chamado do sistema, o propósito do software terá sido em vão.
+
+
+
+
+
+

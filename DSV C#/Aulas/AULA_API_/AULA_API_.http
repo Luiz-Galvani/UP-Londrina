@@ -1,0 +1,6 @@
+@AULA_API__HostAddress = http://localhost:5012
+
+GET {{AULA_API__HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
