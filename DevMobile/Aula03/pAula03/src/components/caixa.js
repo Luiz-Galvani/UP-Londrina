@@ -20,7 +20,7 @@ const estilo = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 14,
         borderWidth: 1,
-        borderColor: '#001aff'
+        borderColor: '#4454ec'
     },
     texto:{
         color:' #ad444400',
