@@ -1,3 +1,5 @@
 {
-    "dotnet.defaultSolution": "aula_1908_OO.sln"
+    "dotnet.defaultSolution": "aula_1908_OO.sln",
+    "explorer.compactFolders": false
+
 }
