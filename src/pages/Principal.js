@@ -9,9 +9,10 @@ export default function Principal(){
         <View style={estilos.container}>
             <Header nome= "Luiz Galvani" icone = "user"/>
             <Saldo />
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <Actions />
             </ScrollView>
+            <Text style = {estilos.texoNome}>Últimos Lançamentos</Text>
         </View>
     
     )
@@ -19,9 +20,11 @@ export default function Principal(){
 
 const estilos = StyleSheet.create({
     container:{
-        flex: 1
+        flex: 1,
+        backgroundColor: '#adadad'
     },
     texoNome: {
-        color: '#ffffff'
+        color: '#000000'
+        
     },
 })
